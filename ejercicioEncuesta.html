@@ -1,0 +1,81 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encuesta</title>
+        <style>
+            h1{
+                color: rgb(32, 112, 178);
+            }
+            label{
+                color: rgb(8, 30, 58);
+                font-style: normal;
+            }
+        </style>
+    </head>
+    <body>
+        <H1>Encuesta</H1>
+        <label for="name"><strong>Nombre</strong></label>
+        <input type="text">
+        <br>
+        <br>
+
+        <label for="name"><strong>Apellido</strong></label>
+        <input type="text">
+        <br>
+        <br>
+
+        <label for="name"><strong>Cedula</strong></label>
+        <input type="number" min="1" pattern="^[0-9]+">
+        <br>
+        <br>
+        <label for="name"><strong>Hogar</strong></label>
+        <br>
+
+        <label for="name">Propio</label>
+        <input type="radio" name="sexo">
+        <label for="name">Alquilado</label>
+        <input type="radio" name="sexo">
+        <br>
+        <br>
+        
+        <label for=""><strong>Sexo</strong></label>
+        <select name="Sexo">
+            <option>Masculino</option>
+            <option>Femenino</option>
+        </select>
+        <br>
+        <br>
+
+        <label for=""><strong>Situacion actual</strong></label>
+        <br>
+        <label for="">Estudiante</label>
+        <input type="checkbox">
+        <label for="">Con trabajo</label>
+        <input type="checkbox">
+        <label for="">Sin trabajo</label>
+        <input type="checkbox">
+        <label for="">Dependiente</label>
+        <input type="checkbox">
+        <br>
+        <br>
+
+        <label for=""><strong>Fecha de Nacimiento</strong></label>
+        <input type="date">
+        <br>
+        <br>
+
+        <label for=""><strong>Telefono</strong></label>
+        <input type="number" pattern="^[0-9]+">
+        <br>
+        <br>
+
+        <label for=""><strong>Correo</strong></label>
+        <input type="email" pattern=".+@example\.com" size="30" required />
+        <br>
+        <br>
+        
+        <input type="submit" value="Enviar">
+
+    </body>
+</html>
