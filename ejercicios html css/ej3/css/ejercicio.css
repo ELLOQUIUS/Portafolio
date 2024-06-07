@@ -1,0 +1,16 @@
+th{
+    font-family: 'Times New Roman';
+    color:blueviolet;
+    border: solid black;
+}
+
+a{
+    font-family: 'Courier';
+    color: green;
+}
+
+td{
+    font-family: Arial;
+    color: red;
+    border: solid black;
+}

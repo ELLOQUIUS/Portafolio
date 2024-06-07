@@ -1,0 +1,25 @@
+*{
+    margin: 3px;
+    padding: 10px 0px;
+    box-sizing: border-box;
+}
+
+h2,h3,h4,h5{
+    color: #ff334f;
+}
+
+p{
+    color: fuchsia;
+}
+
+.especial{
+    color:blue
+}
+
+a:visited{
+    color: rgb(238, 255, 0);
+}
+
+a:active{
+    color: red  ;
+}
