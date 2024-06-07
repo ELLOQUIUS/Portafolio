@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera programada en js</title>
+    <script>
+        //1 es piedra, 2 es papel y 3 es tijeras
+
+        function getRandomIntInclusive(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1)+ min);
+        }
+
+        let opcion = 0;
+        let cont = 0;
+        let cont2 = 0;
+        while(cont < 3 && cont2 < 3){
+            let pc = getRandomIntInclusive(1,3);
+    
+            opcion = prompt("Elige 1 para piedra, 2 para papel, 3 para tijeras")
+    
+            if(opcion == 1 || opcion == 2 || opcion == 3){
+                if(opcion==1){
+                    alert("Elegiste piedra");
+                }else if(opcion==2){
+                    alert("Elegiste papel");
+                }else if(opcion==3){
+                    alert("Elegiste tijeras");
+                }    
+    
+                if(pc==1){
+                    alert("PC elegio piedra");
+                }else if(pc==2){
+                    alert("PC elegio papel");
+                }else if(pc==3){
+                    alert("PC elegio tijeras");
+                }
+    
+                if(pc==opcion){
+                    alert("empate");
+                }else if(pc==1){
+                    if(opcion==2){
+                        alert("ganaste");
+                        cont++;
+                    }else{
+                        alert("perdiste");
+                        cont2++;
+                    }
+                }else if(pc==2){
+                    if(opcion==1){
+                        alert("perdiste");
+                        cont2++;
+                    }else{
+                        alert("ganaste");
+                        cont++;
+                    }
+                }else{
+                    if(opcion==1){
+                        alert("ganaste");
+                        cont++;
+                    }else{
+                        alert("perdiste");
+                        cont2++;
+                    }
+                }
+            }else{
+                alert("No elegiste una opcion valida");
+            }
+            alert("Llevas "+cont+" victorias y la pc "+cont2+" victorias (3 para acabar la sesion)");
+        }
+        if(cont==3){
+            alert("Ganaste la batalla");
+        }else{
+            alert("Perdiste la batalla");
+        }
+        alert("Acabo el juego");
+
+    </script>
+</head>
+<body>
+    <h1>Juego de piedra, papel o tijeras</h1>
+</body>
+</html>
