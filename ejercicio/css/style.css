@@ -1,0 +1,46 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    align-items: center;
+    width: 30%;
+}
+
+.cuadro{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border: solid black 1px;
+    border-radius: 10px;
+}
+
+#resultado{
+    display: flex;
+    justify-content: right;
+    border: solid black 1px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#numeros{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 30px;
+}
+
+#operaciones{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.numero{
+    border: solid aqua 1px;
+    border-radius: 100%;
+}

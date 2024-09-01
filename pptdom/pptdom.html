@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra Papel o Tijera</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/pptdom.js"></script>
+</head>
+<body>
+    <section class="opjugador">
+        <h1><img src="img/ppt.png" alt="ppt" width="500"></h1>
+        <h2 class="subtitulo">Elige tu opcion y pulsa el boton seleccionar</h2>
+        <div class="opcion">
+            <input type="radio" name="jugador" id="piedra">
+            <label for="piedra"><img src="img/piedra.png" alt="piedra"></label>
+            <input type="radio" name="jugador" id="papel">
+            <label for="papel"><img src="img/papel.png" alt="papel"></label>
+            <input type="radio" name="jugador" id="tijeras">
+            <label for="tijeras"><img src="img/tijeras.png" alt="tijeras"></label>
+        </div>
+        <button id="btnjugador">Seleccionar</button>  
+    </section>
+            
+
+    <section>
+        <div class="jugadas">
+            <p id="opJugador"></p>
+            <p id="opPc"></p>
+        </div>
+    </section>
+
+    <div id="mensajes">
+        <p id="resultado">Mucha suerte</p>
+        <section id="reiniciar">
+            <button id="btnreiniciar">Reiniciar</button>
+        </section>
+    </div>
+
+    <div id="score">
+        <div id="score-jugador">0</div>
+        <div id="score-pc">0</div>
+    </div>
+
+</body>
+</html>

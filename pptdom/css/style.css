@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+*{
+    font-family: "Fredoka",sans-serif;
+}
+
+.opjugador{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitulo, #btnjugador{
+    font-size: 20px;
+    background-color: #041562;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.opcion{
+    display: flex;
+    gap: 10px;
+}
+
+input{
+    display: none;
+}
+
+#btnjugador{
+    border: none;
+}
+
+.jugadas, #score{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#opJugador,#opPc{
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+#mensajes{
+    background: #041562;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+#btnreiniciar{
+    padding: 10px;
+}
+
+#score-jugador, #score-pc{
+    width: 40px;
+    height: 40px;
+    background-color: #041562;
+    line-height: 40px;
+    text-align: center;
+    margin: 10px;
+    color: white;
+    border-radius: 20px;
+}
